@@ -1,7 +1,86 @@
+/* Add font import for roboto */
+
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    font-family: sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #242424;
+}
+
+nav{
+    height: 120px;
+    position: sticky;
+}
+
+nav ul{
+    display: inline-block;
+}
+
+nav li{
+
+    float: left;
+    list-style-type: none;
+    padding-top: 40px;
+}
+
+nav a{
+
+    padding: 10px 40px;
+    color: #FF9D00;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+main{
+    height: 1000px;
+}
+
+.main-heading{
+    width: 100%;
+    /* margin-left: 100%;
+    margin-right: 100%; */
+    text-align: center;
+}
+
+h1{
+    font-size: 80pt;
+    display: inline;
+    font-weight: bold;
+}
+
+.sub-heading{
+    width: 100%;
+    padding-top: 25px;
+    margin-right: 100%;
+    text-align: center;
+}
+
+h2{
+    display: inline-block;
+    font-size: 20pt;
+    margin: 0px 5px;
+    /* text-align: center; */
+    /* font-weight: bold; */
+}
+
+.orange{
+    color: #FF9D00;
+}
+
+.blue{
+    color: #0086FF;
+}
+
+.white{
+    color: #FFFFFF;
+}
+
+main img{
+    width: 365px;
+    transform: skewY(-20deg);
 }
