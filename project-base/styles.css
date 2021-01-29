@@ -11,9 +11,19 @@ body{
     background-color: #242424;
 }
 
+body>img{
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+
 nav{
-    height: 120px;
+    height: 114px;
     position: sticky;
+    top: 0px;
+    padding-left: 140px;
+    background-color: #242424;
+    z-index: 1;
 }
 
 nav ul{
@@ -24,7 +34,7 @@ nav li{
 
     float: left;
     list-style-type: none;
-    padding-top: 40px;
+    padding-top: 42px;
 }
 
 nav a{
