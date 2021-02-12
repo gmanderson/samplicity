@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="">
     <meta name="description" content="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.css">
     <link rel="stylesheet" href="styles.css">
     <title>Project Name</title>
 </head>
 
 <body>
 
-    <img src="./images/logo.png" alt="">
+    <a href="index.html"><img src="./images/logo.png" alt="" id="menu-logo"></a>
     
     <nav>
 
         <ul>
             <li>
-                <a href="">INTERFACE</a>
+                <a href="interface.html">INTERFACE</a>
             </li>
             <li>
                 <a href="">FEATURES</a>
@@ -29,9 +30,12 @@
                 <a href="">SUPPORT</a>
             </li>
         </ul>
+
+        <sl-button size="medium" pill>BUY</sl-button>
     </nav>
 
     <main>
+        
         <div class="main-heading">
             <h1 class="orange">SAMP</h1>
             <h1 class="white">LICITY</h1>
@@ -51,14 +55,18 @@
             <h2 class="blue">MIX</h2>
         </div>
 
-        <img src="./images/perform-interface.png" alt="">
-        <img src="./images/perform-interface.png" alt="">
-        <img src="./images/perform-interface.png" alt="">
-        <img src="./images/perform-interface.png" alt="">
-        <img src="./images/perform-interface.png" alt="">
-        <img src="./images/perform-interface.png" alt="">
+        <div id="images">
+            <img src="./images/perform-interface.png" alt="" id="img1">
+            <img src="./images/perform-interface.png" alt="" id="img2">
+            <img src="./images/perform-interface.png" alt="" id="img3">
+            <img src="./images/perform-interface.png" alt="" id="img4">
+            <img src="./images/perform-interface.png" alt="" id="img5">
+            <img src="./images/perform-interface.png" alt="" id="img6">
+        </div>
+
     </main>
 
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.esm.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
