@@ -9,14 +9,14 @@
 body{
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #242424;
-    height: 768px;
+    /* height: 768px; THIS IS THE HEIGHT FOR INDEX*/
 }
 
 #menu-logo{
     position: fixed;
     top: 0px;
     z-index: 2;
-    transition: transform 2s ease;
+    transition: transform 1.5s ease;
 }
 
 #menu-logo:hover{
@@ -176,4 +176,59 @@ main img{
     /* margin-left: 45%;
     margin-right: 0%; */
     z-index: 5;
+}
+
+footer{
+    color: #ffffff;
+    margin: 30px;
+}
+
+sl-dialog{
+    --width: 500px;
+    /* background-color: #242424; */
+}
+
+sl-dialog::part(base){
+    border: #fffffff solid 1px;
+}
+
+
+/* CAN'T SEEM TO CHANGE BUTTON SIZE/COLOUR
+
+sl-dialog::part(base::button){
+    font-size: 5em !important;
+    color: #ffffff !important;
+} */
+
+sl-dialog::part(panel){
+    background-color: #242424;
+    text-align: center;
+    height: 500px;
+}
+
+sl-dialog p{
+    font-family: inherit;
+    font-size: 1.25em;
+    color: #ffffff;
+    padding: 0.7em;
+}
+
+sl-dialog h2{
+    color: #FF9D00;
+    font-family: inherit;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+sl-dialog::part(header){
+    height: 60px;
+}
+
+sl-dialog::part(title){
+    display: none;
+}
+
+sl-dialog a{
+    text-decoration: none;
+    color: #ffffff;
 }

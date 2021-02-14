@@ -1,1 +1,6 @@
-console.log("JavaScript is working!");
+(() => {
+    const dialog = document.querySelector('.dialog-overview');
+    const openButton = document.querySelector('#buy-btn');
+
+    openButton.addEventListener('click', () => dialog.show());
+  })();
