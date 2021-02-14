@@ -189,7 +189,7 @@ sl-dialog{
 }
 
 sl-dialog::part(base){
-    border: #fffffff solid 1px;
+    border: #ffffff solid 1px;
 }
 
 
@@ -231,4 +231,47 @@ sl-dialog::part(title){
 sl-dialog a{
     text-decoration: none;
     color: #ffffff;
+}
+
+/* TECH SPECS SPEICIFIC */
+.specs{
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: auto;
+    width: 750px;
+    padding-top: 4em;
+}
+
+.specs section{
+    padding-top: 2em;
+}
+
+.specs h2{
+    cursor: pointer;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* UL ITEMS HIDDEN BY DEFAULT */
+.specs ul{
+    display: none;
+}
+
+.specs li{
+    font-size: 1.25em;
+    color: #FFFFFF;
+    list-style-type: "-   ";
+    list-style-position: inside;
+    padding-top: 10px;
+}
+
+section div{
+    position: relative;
+}
+
+.fas{
+    position: absolute;
+    right: 0;
+    font-size: 2em;
+    padding-top: 8px;
 }
