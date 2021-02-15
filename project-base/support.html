@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tech Specs | Samplicity</title>
+</head>
+
+<body>
+
+    <a href="index.html"><img src="./images/logo.png" alt="" id="menu-logo"></a>
+    
+    <nav>
+
+        <ul>
+            <li>
+                <a href="interface.html">INTERFACE</a>
+            </li>
+            <li>
+                <a href="">FEATURES</a>
+            </li>
+            <li>
+                <a href="tech-specs.html">TECH SPECS</a>
+            </li>
+            <li>
+                <a href="support.html" class="current-page">SUPPORT</a>
+            </li>
+        </ul>
+
+        <sl-button size="medium" pill id="buy-btn">BUY</sl-button>
+    </nav>
+
+    <main>
+       
+        <article class="support-layout">
+            <section class="support-request">
+                <h2 class="blue">SUPPORT REQUEST</h2>
+                <form action="">
+                    <label for="">Name</label>
+                    <input type="text"><br>
+                    <label for="">Serial Number</label>
+                    <input type="text"><br>
+                    <label for="">Email</label>
+                    <input type="text"><br>
+                    <label for="">Message</label><br>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <sl-button size="medium" pill id="submit-form-btn">SUBMIT</sl-button>
+                </form>
+
+            </section>
+
+            <section>
+                <h2 class="orange">CONTACT</h2>
+                <p>Defined Sampling Pty Ltd</p>
+                <p>123 Fake St <br>Sydney NSW 2000 <br>Australia</p>
+                <p>ABN 91 090 868 323</p>
+                <p>+61 2 8577 1349 <br>
+                info@definedsampling.com.au</p>
+                <p>www.definedsampling.com.au</p>
+                <p>(Support queries will only be answered via our request form)</p>
+            </section>
+        </article>
+
+        <sl-dialog label="" class="dialog-overview">
+            <h2>CONGRATULATIONS</h2>
+            
+            <p>Thanks for your interest in purchasing Samplicity!<br>You’ve made the first step.</p>
+
+            <p>You can purchase the download<br>version through our partner</p>
+            
+            <p>Plugin Boutique<br><a href="http://www.pluginboutique.com" target="_blank">pluginboutique.com</a></p>
+
+            <p>Or grab a physical copy<br>from your local music store.</p>
+            
+        </sl-dialog>
+
+    </main>
+
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.esm.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
