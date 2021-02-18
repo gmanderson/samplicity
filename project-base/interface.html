@@ -6,6 +6,7 @@
     <meta name="author" content="">
     <meta name="description" content="">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
     <title>Project Name</title>
 </head>
@@ -21,7 +22,7 @@
                 <a href="interface.html" class="current-page">INTERFACE</a>
             </li>
             <li>
-                <a href="">FEATURES</a>
+                <a href="features.html">FEATURES</a>
             </li>
             <li>
                 <a href="tech-specs.html">TECH SPECS</a>
@@ -31,15 +32,75 @@
             </li>
         </ul>
 
-        <sl-button size="medium" pill>BUY</sl-button>
+        <sl-button size="medium" pill id="buy-btn">BUY</sl-button>
+
+        
     </nav>
 
-    <main>
-       
+        <main>
 
+
+            <div class="master-container">
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="images/perform-interface.png">
+                        <p>Load 16 independent instruments with quick access to instrument selection, volume and preview.</p>
+                    </div>
+                    
+                    <div class="swiper-slide"><img src="images/library-interface.png">
+                        <p>Browse the included wide-ranging collection of instruments, additional purchased collections, and custom designed instruments with quick access to load into PERFORM or BUILD.</p>
+                    </div>
+                    
+                    <div class="swiper-slide"><img src="images/edit-interface.png">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam possimus dolorem repellendus sint aliquam obcaecati rerum adipisci quo aliquid, facilis enim voluptate, nulla molestiae odio ipsa asperiores praesentium deserunt aperiam!</p>
+                    </div>
+                    
+                    <div class="swiper-slide"><img src="images/sample-interface.png">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam possimus dolorem repellendus sint aliquam obcaecati rerum adipisci quo aliquid, facilis enim voluptate, nulla molestiae odio ipsa asperiores praesentium deserunt aperiam!</p>
+                    </div>
+                    
+                    <div class="swiper-slide"><img src="images/build-interface.png">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam possimus dolorem repellendus sint aliquam obcaecati rerum adipisci quo aliquid, facilis enim voluptate, nulla molestiae odio ipsa asperiores praesentium deserunt aperiam!</p>
+                    </div>
+                    
+                    <div class="swiper-slide"><img src="images/mix-interface.png">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam possimus dolorem repellendus sint aliquam obcaecati rerum adipisci quo aliquid, facilis enim voluptate, nulla molestiae odio ipsa asperiores praesentium deserunt aperiam!</p>
+                    </div>
+                                
+                     </div>
+            
+                    <div class="swiper-pagination"></div>
+              
+                </div>
+            
+                  <!-- Buttons sit outside of the swiper container -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+            
+            </div>
+
+
+        <sl-dialog label="" class="dialog-overview">
+            <h2>CONGRATULATIONS</h2>
+            
+            <p>Thanks for your interest in purchasing Samplicity!<br>You’ve made the first step.</p>
+
+            <p>You can purchase the download<br>version through our partner</p>
+            
+            <p>Plugin Boutique<br><a href="http://www.pluginboutique.com" target="_blank">pluginboutique.com</a></p>
+
+            <p>Or grab a physical copy<br>from your local music store.</p>
+            
+        </sl-dialog>
     </main>
 
+
+    
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.esm.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
