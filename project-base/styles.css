@@ -114,7 +114,7 @@ h3{
     color: #FFFFFF;
 }
 
-main img{
+.index img{
     width: 365px;
     transform: skewY(-20deg);
 
@@ -233,6 +233,45 @@ sl-dialog a{
     color: #ffffff;
 }
 
+/* FEATURES RELATED */
+.features-layout{
+    /* display: grid;
+    grid-template-rows: 1fr 1fr; */
+    width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+}
+
+.features-layout section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.orange-line{
+    border-bottom: #FF9D00 solid 4px;
+}
+
+.blue-line{
+    border-bottom: #0086FF solid 4px;
+}
+
+.features-layout h2{
+    font-size: 2.5em;
+
+}
+
+sl-progress-bar{
+    --indicator-color: #FF9D00;
+    --track-color: #ffffff;
+    --height: 4px;
+    width: 100vw;
+    position: fixed;
+    top: 114px;
+}
+
+
 /* TECH SPECS SPEICIFIC */
 .specs{
     /* margin-left: auto;
@@ -258,6 +297,10 @@ sl-dialog a{
     display: none;
 }
 
+.open{
+    display: block !important;
+}
+
 .specs li{
     font-size: 1.25em;
     color: #FFFFFF;
@@ -273,9 +316,11 @@ section div{
 .fas{
     position: absolute;
     right: 0;
+    top: 0;
     font-size: 2em;
     padding-top: 8px;
 }
+
 
 /* SUPPORT RELATED */
 
@@ -294,12 +339,19 @@ section div{
 .support-layout section{
 
     color: #ffffff;
-    margin: 6em 3em;
+    margin: 4.5em 3em;
 }
 
 .support-layout p{
     margin-top: 1em;
+    margin-bottom: 1.8em;
     font-size: 1.25em;
+}
+
+.support-layout label{
+    display: inline-block;
+    height: 30px;
+    margin-bottom: 17px;
 }
 
 .support-layout section form{
@@ -309,6 +361,92 @@ section div{
 
 #submit-form-btn{
     position: relative;
-    
     font-size: initial;
+    margin-left: 65px;
+}
+
+.support-layout input{
+    float: right;
+    height: 30px;
+    width: 298px;
+    margin-bottom: 17px;
+}
+
+.support-layout textarea{
+    width: 100%;
+}
+
+
+/* INTERFACE PAGE*/
+
+.master-container{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+} 
+
+.swiper-container {
+    position: relative;
+    width: 650px;
+    height: 600px;
+    margin-top: 5em;
+  } 
+
+.swiper-slide{
+    height: 300px;
+    width: 218px;
+    color: #ffffff;
+
+}
+
+.swiper-slide p{
+    font-size: 1.25em;
+    margin: 1em 0;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: orange;
+    background: url('images/slide-arrow.png');
+    height: 160px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 160px;
+    outline: none;
+}
+
+.swiper-button-prev{
+    right: auto;
+    left: 80px;
+    transform: rotate(180deg);
+}
+
+.swiper-button-next{
+    left: auto;
+    right: 80px;
+}
+
+
+.swiper-button-next::after, .swiper-button-prev::after{
+    display: none;
+  }
+
+.swiper-pagination{
+    padding: 10px;
+}
+
+.swiper-pagination-bullet{
+    height: 20px;
+    width: 20px;
+    padding-right: 10px;
+    background: #FF9D00;
+    opacity: 1;
+    margin: 5px;
+}
+
+.swiper-pagination-bullet-active{
+    background: white;
 }
