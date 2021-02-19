@@ -63,6 +63,11 @@ sl-button{
     position: absolute;
     top: 35px;
     right: 64px;
+    transition: transform 0.4s;
+}
+
+sl-button:hover{
+    transform: scale(1.07);
 }
 
 sl-button::part(base){
@@ -271,6 +276,10 @@ sl-progress-bar{
     top: 114px;
 }
 
+#audio-lines{
+    width: 80%;
+}
+
 
 /* TECH SPECS SPEICIFIC */
 .specs{
@@ -290,6 +299,41 @@ sl-progress-bar{
     cursor: pointer;
     font-size: 2.5em;
     margin: 0;
+}
+
+.spin-animation{
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+        opacity: 1;
+        transform-origin: 41% 59%;
+    }
+    100%{
+        transform: rotate(720deg);
+        opacity: 0;
+        transform-origin: 41% 59%;
+    }
+}
+
+.fade-in{
+    animation-name: minus-fade;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-delay: 2s;
+}
+
+@keyframes minus-fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 /* UL ITEMS HIDDEN BY DEFAULT */
