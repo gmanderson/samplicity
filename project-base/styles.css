@@ -1,4 +1,6 @@
 /* Add font import for roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
 /* NOT TO SELF work in ems (multiples of 12px fixed and % dynamic */
 *{
     box-sizing: border-box;
@@ -16,11 +18,6 @@ body{
     position: fixed;
     top: 0px;
     z-index: 2;
-    transition: transform 1.5s ease;
-}
-
-#menu-logo:hover{
-    transform: rotateY(360deg);
 }
 
 nav{
@@ -50,6 +47,11 @@ nav a{
     text-decoration: none;
     font-weight: bold;
     font-size: 1.25em;
+    transition: color 0.7s;
+}
+
+nav a:hover{
+    color: #0086FF;
 }
 
 .current-page{
@@ -246,12 +248,14 @@ sl-dialog a{
     margin-left: auto;
     margin-right: auto;
     color: #ffffff;
+
 }
 
 .features-layout section{
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 .orange-line{
@@ -264,7 +268,11 @@ sl-dialog a{
 
 .features-layout h2{
     font-size: 2.5em;
+}
 
+.features-layout p{
+    font-size: 1.25em;
+    margin-top: 1em;
 }
 
 sl-progress-bar{
@@ -276,9 +284,60 @@ sl-progress-bar{
     top: 114px;
 }
 
-#audio-lines{
+/* #audio-lines{
     width: 80%;
+} */
+
+.feature-img{
+    text-align: center;
+    margin: 1em;
 }
+
+.feature-img p{
+    text-align: left;
+    margin: 1em;
+}
+
+.feature-text{
+    width: 90%;
+    margin-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.feature-text img{
+    margin-top: 2em;
+}
+
+.play-btn, .play-select-btn{
+    position: relative;
+    height: 60px;
+}
+
+.play-select-btn sl-button{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.play-select-btn p{
+    margin-left: 150px;
+    padding-top: 8px;
+}
+
+.play-select-btn sl-button i{
+    position: inherit;
+    font-size: 1em;
+}
+
+svg{
+    height: 20%;
+}
+
+.fa-play{
+    color: #0086FF;
+}
+
 
 
 /* TECH SPECS SPEICIFIC */
@@ -418,6 +477,11 @@ section div{
 
 .support-layout textarea{
     width: 100%;
+}
+
+.company-details a{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 
