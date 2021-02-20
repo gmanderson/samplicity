@@ -11,7 +11,8 @@ window.addEventListener('scroll', () => {
 
 
   //FEATURES
-  let audioLines = document.querySelector('#audio-lines')
+//   let audioLines = document.querySelectorAll('.audio-lines')
+let audioLines = document.querySelectorAll('.play-btn')
 
   let line01 = "M0,50L0,50Z"
   let line02 = "M0,33L0,33Z"
@@ -78,14 +79,51 @@ timeline.add({
     ]
 }, '-=800')
 
-  audioLines.addEventListener('click', function(){
-    if(audioLines.classList.contains('playing')){
-        audioLines.classList.toggle('playing')
-        timeline.pause()
-        timeline.seek(0)
-    }else{
-        audioLines.classList.toggle('playing')
-        timeline.play()
-    }
+// audioLines.forEach(lineSet => {
+//     lineSet.addEventListener('click', ()=>{
+//         if(lineSet.classList.contains('playing')){
+//             lineSet.classList.toggle('playing')
+//             timeline.pause()
+//             timeline.seek(0)
+//         }else{
+//             lineSet.classList.toggle('playing')
+//             timeline.play()
+//         }
+    
+//       })
+// })
 
-  })
+let playBtns = document.querySelectorAll('.play-select-btn')
+
+playBtns.forEach(playBtn =>{
+    
+    playBtn.addEventListener('click', function(){
+        playAudio("#"+playBtn.querySelector('.audio-file').id)
+
+        if(playBtn.classList.contains('playing')){
+            playBtn.classList.toggle('playing')
+            playBtn.querySelector('.fas').classList.toggle('fa-stop')
+            playBtn.querySelector('.fas').classList.toggle('fa-play')
+            timeline.pause()
+            timeline.seek(0)
+        }else{
+            playBtn.classList.toggle('playing')
+            playBtn.querySelector('.fas').classList.toggle('fa-stop')
+            playBtn.querySelector('.fas').classList.toggle('fa-play')
+            timeline.play()
+        }
+    })
+
+})
+
+function playAudio(audioN){
+    if(document.querySelector(audioN).classList.contains('pause')){
+        document.querySelector(audioN).classList.toggle('pause')
+        document.querySelector(audioN).play()
+    }else{
+        document.querySelector(audioN).classList.toggle('pause')
+        // document.querySelector(audioN).pause()
+        document.querySelector(audioN).load()
+    }
+}
+
