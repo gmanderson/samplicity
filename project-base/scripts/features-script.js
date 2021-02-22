@@ -79,19 +79,6 @@ timeline.add({
     ]
 }, '-=800')
 
-// audioLines.forEach(lineSet => {
-//     lineSet.addEventListener('click', ()=>{
-//         if(lineSet.classList.contains('playing')){
-//             lineSet.classList.toggle('playing')
-//             timeline.pause()
-//             timeline.seek(0)
-//         }else{
-//             lineSet.classList.toggle('playing')
-//             timeline.play()
-//         }
-    
-//       })
-// })
 
 let playBtns = document.querySelectorAll('.play-select-btn')
 
@@ -127,3 +114,232 @@ function playAudio(audioN){
     }
 }
 
+// SCROLL TRIGGER // COULD THIS BE COMPACTED USING A LOOP???
+const featureTimeline1 = gsap.timeline({
+})
+
+
+featureTimeline1.from('#section-1 .feature-img',{
+    opacity: 0,
+    duration: 4
+})
+featureTimeline1.from('#section-1 .feature-text',{
+    opacity: 0,
+    duration: 4
+}, "-=4")
+featureTimeline1.from('#section-1',{
+    x: -1500,
+    duration: 2
+}, "-=4")
+
+
+const featureTimeline2 = gsap.timeline({
+    scrollTrigger:{
+        trigger: '#section-1',
+        start: 'top center'
+    }
+})
+
+featureTimeline2.from('#section-2 .feature-img',{
+    opacity: 0,
+    duration: 4
+})
+featureTimeline2.from('#section-2 .feature-text',{
+    opacity: 0,
+    duration: 4
+}, "-=4")
+featureTimeline2.from('#section-2',{
+    x: 2000,
+    duration: 4
+}, "-=4")
+
+
+const featureTimeline3 = gsap.timeline({
+    scrollTrigger:{
+        trigger: '#section-1',
+        start: 'bottom center'
+    }
+})
+featureTimeline3.from('#section-3 .feature-img',{
+    opacity: 0,
+    duration: 4
+})
+featureTimeline3.from('#section-3 .feature-text',{
+    opacity: 0,
+    duration: 4
+}, "-=4")
+featureTimeline3.from('#section-3',{
+    x: -1500,
+    duration: 2
+}, "-=4")
+
+const featureTimeline4 = gsap.timeline({
+    scrollTrigger:{
+        trigger: '#section-2',
+        start: 'bottom center'
+    }
+})
+featureTimeline4.from('#section-4 .feature-img',{
+    opacity: 0,
+    duration: 4
+})
+featureTimeline4.from('#section-4 .feature-text',{
+    opacity: 0,
+    duration: 4
+}, "-=4")
+featureTimeline4.from('#section-4',{
+    x: 2000,
+    duration: 2
+}, "-=4")
+
+const featureTimeline5 = gsap.timeline({
+    scrollTrigger:{
+        trigger: '#section-3',
+        start: 'bottom center'
+    }
+})
+featureTimeline5.from('#section-5 .feature-img',{
+    opacity: 0,
+    duration: 4
+})
+featureTimeline5.from('#section-5 .feature-text',{
+    opacity: 0,
+    duration: 4
+}, "-=4")
+featureTimeline5.from('#section-5',{
+    x: -1500,
+    duration: 2
+}, "-=4")
+
+const featureTimeline6 = gsap.timeline({
+    scrollTrigger:{
+        trigger: '#section-4',
+        start: 'bottom center'
+    }
+})
+featureTimeline6.from('#section-6 .feature-img',{
+    opacity: 0,
+    duration: 4
+})
+featureTimeline6.from('#section-6 .feature-text',{
+    opacity: 0,
+    duration: 4
+}, "-=4")
+featureTimeline6.from('#section-6',{
+    x: 2000,
+    duration: 2
+}, "-=4")
+
+const featureTimeline7 = gsap.timeline({
+    scrollTrigger:{
+        trigger: '#section-5',
+        start: 'bottom center'
+    }
+})
+featureTimeline7.from('#section-7 .feature-img',{
+    opacity: 0,
+    duration: 4
+})
+featureTimeline7.from('#section-7 .feature-text',{
+    opacity: 0,
+    duration: 4
+}, "-=4")
+featureTimeline7.from('#section-7',{
+    x: -1500,
+    duration: 2
+}, "-=4")
+
+const featureTimeline8 = gsap.timeline({
+    scrollTrigger:{
+        trigger: '#section-6',
+        start: 'bottom center'
+    }
+})
+featureTimeline8.from('#section-8 .feature-img',{
+    opacity: 0,
+    duration: 4
+})
+featureTimeline8.from('#section-8 .feature-text',{
+    opacity: 0,
+    duration: 4
+}, "-=4")
+featureTimeline8.from('#section-8',{
+    x: 2000,
+    duration: 2
+}, "-=4")
+
+const featureTimeline9 = gsap.timeline({
+    scrollTrigger:{
+        trigger: '#section-7',
+        start: 'bottom center'
+    }
+})
+featureTimeline9.from('#section-9 .feature-img',{
+    opacity: 0,
+    duration: 4
+})
+featureTimeline9.from('#section-9 .feature-text',{
+    opacity: 0,
+    duration: 4
+}, "-=4")
+featureTimeline9.from('#section-9',{
+    x: -1500,
+    duration: 2
+}, "-=4")
+
+const featureTimeline10 = gsap.timeline({
+    scrollTrigger:{
+        trigger: '#section-8',
+        start: 'bottom center'
+    }
+})
+featureTimeline10.from('#section-10 .feature-img',{
+    opacity: 0,
+    duration: 4
+})
+featureTimeline10.from('#section-10 .feature-text',{
+    opacity: 0,
+    duration: 4
+}, "-=4")
+featureTimeline10.from('#section-10',{
+    x: 2000,
+    duration: 2
+}, "-=4")
+
+const featureTimeline11 = gsap.timeline({
+    scrollTrigger:{
+        trigger: '#section-9',
+        start: 'bottom center'
+    }
+})
+featureTimeline11.from('#section-11 .feature-img',{
+    opacity: 0,
+    duration: 4
+})
+featureTimeline11.from('#section-11 .feature-text',{
+    opacity: 0,
+    duration: 4
+}, "-=4")
+featureTimeline11.from('#section-11',{
+    x: -1500,
+    duration: 2
+}, "-=4")
+
+const featureTimeline12 = gsap.timeline({
+    scrollTrigger:{
+        trigger: '#section-10',
+        start: 'bottom center'
+    }
+})
+featureTimeline12.from('#section-12 .feature-img',{
+    opacity: 0,
+    duration: 4
+})
+featureTimeline12.from('#section-12 .feature-text',{
+    opacity: 0,
+    duration: 4
+}, "-=4")
+featureTimeline12.from('#section-12',{
+    x: 2000,
+    duration: 2
+}, "-=4")
