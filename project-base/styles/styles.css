@@ -1,0 +1,238 @@
+/* Add font import for roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+/* NOT TO SELF work in ems (multiples of 12px fixed and % dynamic */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #242424;
+    /* height: 768px; THIS IS THE HEIGHT FOR INDEX*/
+}
+
+#menu-logo{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 11;
+}
+
+#menu-logo-list-el{
+    width: 140px;
+}
+
+.hamburger-button{
+    display: none;
+}
+
+header{
+    height: 114px;
+    background-color: #242424;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+nav{
+    position: sticky;
+    top: 0px;
+    /* padding-left: 114px; */
+    background-color: #242424;
+}
+
+nav ul{
+    display: inline-block;
+}
+
+nav li{
+    float: left;
+    list-style-type: none;
+    padding-top: 42px;
+}
+
+nav a{
+
+    padding: 10px 40px;
+    color: #FF9D00;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25em;
+    transition: color 0.7s;
+}
+
+nav a:hover{
+    color: #0086FF;
+}
+
+.current-page{
+    color: #ffffff;
+    border-bottom: #FFFFFF solid 3px;
+    padding-bottom: 43px;
+}
+
+sl-button{
+    width: 121px;
+    position: absolute;
+    top: 35px;
+    right: 64px;
+    transition: transform 0.4s;
+}
+
+sl-button:hover{
+    transform: scale(1.07);
+}
+
+sl-button::part(base){
+    background: #FF9D00;
+    border: none;
+    font-family: inherit;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #242424;
+}
+
+.orange{
+    color: #FF9D00;
+}
+
+.blue{
+    color: #0086FF;
+}
+
+.white{
+    color: #FFFFFF;
+}
+
+
+footer{
+    color: #ffffff;
+    margin: 30px;
+}
+
+sl-dialog{
+    --width: 500px;
+    /* background-color: #242424; */
+}
+
+sl-dialog::part(base){
+    border: #ffffff solid 1px;
+}
+
+
+/* CAN'T SEEM TO CHANGE BUTTON SIZE/COLOUR
+
+sl-dialog::part(base::button){
+    font-size: 5em !important;
+    color: #ffffff !important;
+} */
+
+sl-dialog::part(panel){
+    background-color: #242424;
+    text-align: center;
+    height: 500px;
+}
+
+sl-dialog p{
+    font-family: inherit;
+    font-size: 1.25em;
+    color: #ffffff;
+    padding: 0.7em;
+}
+
+sl-dialog h2{
+    color: #FF9D00;
+    font-family: inherit;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+sl-dialog::part(header){
+    height: 60px;
+}
+
+sl-dialog::part(title){
+    display: none;
+}
+
+sl-dialog a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+@media only screen and (max-width: 1024px){
+
+    .hamburger-button{
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        background-color: #242424;
+        border: none;
+        outline: none;
+    }
+
+    #menu-logo{
+        position: relative;
+    }
+
+    .fa-bars, .fa-times{
+        position: relative;
+        color: #FFFFFF;
+        z-index: 11;
+        font-size: 2.5em;
+    }
+
+    nav{
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #242424;
+        z-index: 10;
+        padding: 0;
+        transform: translateY(-100%);
+        transition: transform 0.5s;
+    }
+
+    nav ul{
+        display:flex;
+        flex-direction: column;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    #menu-logo-list-el{
+        width: auto;
+    }
+
+    header{
+        position: sticky;
+        top: 0;
+        height: 50px;
+    }
+
+    sl-button{
+        width: 121px;
+        position: relative;
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+
+    nav.open{
+        transform: translateY(0%);
+    }
+
+    sl-dialog h2{
+
+        font-size: 2em;
+
+    }
+}
