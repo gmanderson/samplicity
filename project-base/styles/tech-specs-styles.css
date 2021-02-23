@@ -1,0 +1,110 @@
+
+/* TECH SPECS SPEICIFIC */
+.specs{
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: auto;
+    width: 750px;
+    padding-top: 4em;
+    padding-bottom: 6em;
+}
+
+.specs section{
+    padding-top: 2em;
+}
+
+.specs h2{
+    cursor: pointer;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.spin-animation{
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+        opacity: 1;
+        transform-origin: 41% 59%;
+    }
+    100%{
+        transform: rotate(720deg);
+        opacity: 0;
+        transform-origin: 41% 59%;
+    }
+}
+
+.fade-in{
+    animation-name: minus-fade;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-delay: 2s;
+}
+
+@keyframes minus-fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* UL ITEMS HIDDEN BY DEFAULT */
+.specs ul{
+    display: none;
+}
+
+.open{
+    display: block !important;
+}
+
+.specs li{
+    font-size: 1.25em;
+    color: #FFFFFF;
+    list-style-type: "-   ";
+    list-style-position: inside;
+    padding-top: 10px;
+}
+
+section div{
+    position: relative;
+}
+
+.fa-plus, .fa-minus{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2em;
+    padding-top: 8px;
+}
+
+
+@media only screen and (max-width: 1024px){
+
+    .specs{
+
+        width: 100%;
+        padding: 0 4% 8% 4%;
+
+    }
+
+    .specs h2{
+        font-size: 2em;
+    }
+
+    .fa-plus, .fa-minus{
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 1.3em;
+        padding-top: 8px;
+    }
+
+}
+
+
