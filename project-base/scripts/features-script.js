@@ -324,22 +324,3 @@ featureTimeline11.from('#section-11',{
     x: -1500,
     duration: 2
 }, "-=4")
-
-const featureTimeline12 = gsap.timeline({
-    scrollTrigger:{
-        trigger: '#section-10',
-        start: 'bottom center'
-    }
-})
-featureTimeline12.from('#section-12 .feature-img',{
-    opacity: 0,
-    duration: 4
-})
-featureTimeline12.from('#section-12 .feature-text',{
-    opacity: 0,
-    duration: 4
-}, "-=4")
-featureTimeline12.from('#section-12',{
-    x: 2000,
-    duration: 2
-}, "-=4")
