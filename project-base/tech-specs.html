@@ -7,7 +7,8 @@
     <meta name="description" content="">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/tech-specs-styles.css">
 
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     
@@ -16,28 +17,33 @@
 
 <body>
 
-    <a href="index.html"><img src="./images/logo.png" alt="" id="menu-logo"></a>
+    <header>
+
+        <button class="hamburger-button"><i class="fas fa-bars"></i></button>
+        <nav>
+
+            <ul>
+                <li id="menu-logo-list-el">
+                    <a href="index.html"><img src="./images/logo.png" alt="" id="menu-logo"></a>
+                </li>
+                <li>
+                    <a href="interface.html">INTERFACE</a>
+                </li>
+                <li>
+                    <a href="features.html">FEATURES</a>
+                </li>
+                <li>
+                    <a href="tech-specs.html">TECH SPECS</a>
+                </li>
+                <li>
+                    <a href="support.html">SUPPORT</a>
+                </li>
+            </ul>
     
-    <nav>
-
-        <ul>
-            <li>
-                <a href="interface.html">INTERFACE</a>
-            </li>
-            <li>
-                <a href="features.html">FEATURES</a>
-            </li>
-            <li>
-                <a href="tech-specs.html" class="current-page">TECH SPECS</a>
-            </li>
-            <li>
-                <a href="support.html">SUPPORT</a>
-            </li>
-        </ul>
-
-        <sl-button size="medium" pill id="buy-btn">BUY</sl-button>
-    </nav>
-
+            <sl-button size="medium" pill id="buy-btn">BUY</sl-button>
+        </nav>
+    </header>
+    
     <main>
         
         <article class="specs">
