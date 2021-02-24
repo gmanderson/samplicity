@@ -1,146 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="">
-    <meta name="description" content="">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/tech-specs-styles.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Gerard Anderson">
+        <meta name="description" content="Defined Sampling's Samplicity software sampler">
+        <!-- Reference: Fonticons, Inc. n.d. Font Awesome. https://fontawesome.com -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+        <!-- Reference: LaViska, C. n.d. Shoelace. https://shoelace.style -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/tech-specs-styles.css">
 
-    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
-    
-    <title>Tech Specs | Samplicity</title>
-</head>
-
-<body>
-
-    <header>
-
-        <button class="hamburger-button"><i class="fas fa-bars"></i></button>
-        <nav>
-
-            <ul>
-                <li id="menu-logo-list-el">
-                    <a href="index.html"><img src="./images/logo.png" alt="" id="menu-logo"></a>
-                </li>
-                <li>
-                    <a href="interface.html">INTERFACE</a>
-                </li>
-                <li>
-                    <a href="features.html">FEATURES</a>
-                </li>
-                <li>
-                    <a href="tech-specs.html">TECH SPECS</a>
-                </li>
-                <li>
-                    <a href="support.html">SUPPORT</a>
-                </li>
-            </ul>
-    
-            <sl-button size="medium" pill id="buy-btn">BUY</sl-button>
-        </nav>
-    </header>
-    
-    <main>
+        <!-- Anderson, G. 2021. [Defined Sampling Logo.] Personal image. Sydney -->
+        <link rel="icon" href="./images/favicon.png" type="image/x-icon">
         
-        <article class="specs">
-            <section>
-                <div>
-                    <h2 class="blue">GENERAL</h2>
-                    <i class="fas fa-plus blue"></i>
-                    <i class="fas fa-minus blue"></i>
-                </div>
+        <title>Tech Specs | Samplicity</title>
+    </head>
 
-                <ul>
-                    <li>VST3 or Audio Unit plug-in and stand alone operation</li>
-                    <li>32-bit 44.1/88.2/96/176.4/192kHz</li>
-                    <li>64-bit summing engine</li>
-                    <li>POW-r dithering</li>
-                    <li>16 simultaneous instruments</li>
-                    <li>Over 7,500 instruments in the included library collections</li>
-                    <li>64 audio outputs (dependent on audio interface or host)</li>
-                    <li>64 auxiliary busses</li>
-                    <li>30 included effects</li>
-                </ul>
-            </section>
-    
-            <section>
-                <div>
-                    <h2 class="orange">LIBRARY CONTENT</h2>
-                    <i class="fas fa-plus orange"></i>
-                    <i class="fas fa-minus orange"></i>
-                </div>
-
-                <ul>
-                    <li>75GB of multisamples, single samples, one shots, and loops</li>
-                    <li>Grand Concert - Grand Piano Collection including Steinway and Yamaha</li>
-                    <li>Vintage Electric - Electric Piano collection</li>
-                    <li>Organic - Organ Collection</li>
-                    <li>Symphosised - Symphonic Instrument Collection</li>
-                    <li>R.Y.T.M - Rhythm Section Collection - Guitars, bass, drums</li>
-                    <li>Synthetic Taste - Synths from Synthetic</li>
-                    <li>Slow Clap Collection</li>
-                </ul>
-            </section>
-    
-            <section>
-                <div>
-                    <h2 class="blue">SUPPORTED SAMPLE FORMATS</h2>
-                    <i class="fas fa-plus blue"></i>
-                    <i class="fas fa-minus blue"></i>
-                </div>
-
-                <ul>
-                    <li>Audio formats: 16/24-bit | 44.1/88.2/96/176.4/192kHz</li>
-                    <li>AIFF, CAF, Broadcast WAV, Sound Designer II</li>
-                    <li>Samplicity Monolithic Container (SMC)</li>
-                    <li>Apple EXS</li>
-                    <li>Native Instruments Kontakt (non-monolithic, unprotected)</li>
-                    <li>Reason NN-XT</li>
-                    <li>TASCAM Gigasampler</li>
-                    <li>UVI UFS Soundbank</li>
-                </ul>
-            </section>
-    
-            <section>
-                <div>
-                    <h2 class="orange">SYSTEM REQUIREMENTS</h2>
-                    <i class="fas fa-plus orange spin-animation-reverse"></i>
-                    <i class="fas fa-minus orange"></i>
-                </div>
-
-                <ul>
-                    <li>macOS 10.15 or 11.1 | Windows 10 (64-bit)</li>
-                    <li>Intel Core i5 | AMD Ryzen 5 | Apple M1</li>
-                    <li>4GB RAM (8GB or higher recommended)</li>
-                    <li>50GB disk space (library is compressed)</li>
-                    <li>VST3 or Audio Unit compatible host for plug-in</li>
-                </ul>
-            </section>
-        </article>
-       
-
-        <sl-dialog label="" class="dialog-overview">
-            <h2>CONGRATULATIONS</h2>
+    <body>
+        <header>
+            <button class="hamburger-button"><i class="fas fa-bars"></i></button>
             
-            <p>Thanks for your interest in purchasing Samplicity!<br>You’ve made the first step.</p>
+            <nav>
+                <ul>
+                    <li id="menu-logo-list-el">
+                        <!-- Anderson, G. 2021. [Defined Sampling Logo.] Personal image. Sydney -->
+                        <a href="index.html">
+                            <img src="./images/logo.png" alt="Defined Sampling Logo" id="menu-logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="interface.html">INTERFACE</a>
+                    </li>
+                    <li>
+                        <a href="features.html">FEATURES</a>
+                    </li>
+                    <li>
+                        <a href="tech-specs.html">TECH SPECS</a>
+                    </li>
+                    <li>
+                        <a href="support.html">SUPPORT</a>
+                    </li>
+                </ul>
+        
+                <sl-button size="medium" pill id="buy-btn">BUY</sl-button>
+            </nav>
+        </header>
+        
+        <main>    
+            <article class="specs">
+                <section>
+                    <div>
+                        <h2 class="blue">GENERAL</h2>
+                        <i class="fas fa-plus blue"></i>
+                        <i class="fas fa-minus blue"></i>
+                    </div>
 
-            <p>You can purchase the download<br>version through our partner</p>
-            
-            <p>Plugin Boutique<br><a href="http://www.pluginboutique.com" target="_blank">pluginboutique.com</a></p>
+                    <ul>
+                        <li>VST3 or Audio Unit plug-in and stand alone operation</li>
+                        <li>32-bit 44.1/88.2/96/176.4/192kHz</li>
+                        <li>64-bit summing engine</li>
+                        <li>POW-r dithering</li>
+                        <li>16 simultaneous instruments</li>
+                        <li>Over 7,500 instruments in the included library collections</li>
+                        <li>64 audio outputs (dependent on audio interface or host)</li>
+                        <li>64 auxiliary busses</li>
+                        <li>30 included effects</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <div>
+                        <h2 class="orange">LIBRARY CONTENT</h2>
+                        <i class="fas fa-plus orange"></i>
+                        <i class="fas fa-minus orange"></i>
+                    </div>
 
-            <p>Or grab a physical copy<br>from your local music store.</p>
-            
-        </sl-dialog>
+                    <ul>
+                        <li>75GB of multisamples, single samples, one shots, and loops</li>
+                        <li>Grand Concert - Grand Piano Collection including Steinway and Yamaha</li>
+                        <li>Vintage Electric - Electric Piano collection</li>
+                        <li>Organic - Organ Collection</li>
+                        <li>Symphosised - Symphonic Instrument Collection</li>
+                        <li>R.Y.T.M - Rhythm Section Collection - Guitars, bass, drums</li>
+                        <li>Synthetic Taste - Synths from Synthetic</li>
+                        <li>Slow Clap Collection</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <div>
+                        <h2 class="blue">SUPPORTED SAMPLE FORMATS</h2>
+                        <i class="fas fa-plus blue"></i>
+                        <i class="fas fa-minus blue"></i>
+                    </div>
 
-    </main>
+                    <ul>
+                        <li>Audio formats: 16/24-bit | 44.1/88.2/96/176.4/192kHz</li>
+                        <li>AIFF, CAF, Broadcast WAV, Sound Designer II</li>
+                        <li>Samplicity Monolithic Container (SMC)</li>
+                        <li>Apple EXS</li>
+                        <li>Native Instruments Kontakt (non-monolithic, unprotected)</li>
+                        <li>Reason NN-XT</li>
+                        <li>TASCAM Gigasampler</li>
+                        <li>UVI UFS Soundbank</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <div>
+                        <h2 class="orange">SYSTEM REQUIREMENTS</h2>
+                        <i class="fas fa-plus orange spin-animation-reverse"></i>
+                        <i class="fas fa-minus orange"></i>
+                    </div>
 
+                    <ul>
+                        <li>macOS 10.15 or 11.1 | Windows 10 (64-bit)</li>
+                        <li>Intel Core i5 | AMD Ryzen 5 | Apple M1</li>
+                        <li>4GB RAM (8GB or higher recommended)</li>
+                        <li>50GB disk space (library is compressed)</li>
+                        <li>VST3 or Audio Unit compatible host for plug-in</li>
+                    </ul>
+                </section>
+            </article>
+        
+            <sl-dialog label="" class="dialog-overview">
+                <h2>CONGRATULATIONS</h2>
+                <p>Thanks for your interest in purchasing Samplicity!<br>
+                    You’ve made the first step.</p>
+                <p>You can purchase the download<br>
+                    version through our partner</p>
+                <p>Plugin Boutique<br>
+                    <a href="http://www.pluginboutique.com" target="_blank">pluginboutique.com</a>
+                </p>
+                <p>Or grab a physical copy<br>
+                    from your local music store.</p>
+            </sl-dialog>
+        </main>
 
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.esm.js"></script>
-    <script src="./scripts/main.js"></script>
-    <script src="./scripts/tech-specs-script.js"></script>
-</body>
+        <!-- Reference: LaViska, C. n.d. Shoelace. https://shoelace.style -->
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.esm.js"></script>
+        <script src="./scripts/main.js"></script>
+        <script src="./scripts/tech-specs-script.js"></script>
+    </body>
 </html>

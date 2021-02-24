@@ -1,115 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="">
-    <meta name="description" content="">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/interface-styles.css">
-    
-    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
-    
-    <title>Project Name</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Gerard Anderson">
+        <meta name="description" content="Defined Sampling's Samplicity software sampler">
+        <!-- Reference: LaViska, C. n.d. Shoelace. https://shoelace.style-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.css">
+        <!-- Reference: Kharlampidi, V. 2021. Swiper. https://swiperjs.com -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <!-- Reference: Fonticons, Inc. n.d. Font Awesome. https://fontawesome.com -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/interface-styles.css">
+        
+        <!-- Anderson, G. 2021. [Defined Sampling Logo.] Personal image. Sydney -->
+        <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+        
+        <title>Interface | Samplicity</title>
+    </head>
 
-<body>
-
-    <header>
-
-        <button class="hamburger-button"><i class="fas fa-bars"></i></button>
-        <nav>
-
-            <ul>
-                <li id="menu-logo-list-el">
-                    <a href="index.html"><img src="./images/logo.png" alt="" id="menu-logo"></a>
-                </li>
-                <li>
-                    <a href="interface.html">INTERFACE</a>
-                </li>
-                <li>
-                    <a href="features.html">FEATURES</a>
-                </li>
-                <li>
-                    <a href="tech-specs.html">TECH SPECS</a>
-                </li>
-                <li>
-                    <a href="support.html">SUPPORT</a>
-                </li>
-            </ul>
-    
-            <sl-button size="medium" pill id="buy-btn">BUY</sl-button>
-        </nav>
-    </header>
+    <body>
+        <header>
+            <button class="hamburger-button"><i class="fas fa-bars"></i></button>
+            
+            <nav>
+                <ul>
+                    <li id="menu-logo-list-el">
+                        <!-- Anderson, G. 2021. [Defined Sampling Logo.] Personal image. Sydney -->
+                        <a href="index.html">
+                            <img src="./images/logo.png" alt="Defined Sampling Logo" id="menu-logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="interface.html">INTERFACE</a>
+                    </li>
+                    <li>
+                        <a href="features.html">FEATURES</a>
+                    </li>
+                    <li>
+                        <a href="tech-specs.html">TECH SPECS</a>
+                    </li>
+                    <li>
+                        <a href="support.html">SUPPORT</a>
+                    </li>
+                </ul>
+        
+                <sl-button size="medium" pill id="buy-btn">BUY</sl-button>
+            </nav>
+        </header>
 
         <main>
-
-
+            <!-- Container to hold all swiper components -->
             <div class="master-container">
-                <!-- Slider main container -->
+                
+                <!-- Container for slider components -->
                 <div class="swiper-container">
-                    <!-- Additional required wrapper -->
+                    
+                    <!-- Wrapper for slides -->
                     <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="images/perform-interface.png">
-                        <p>Load 16 independent instruments with quick access to instrument selection, volume and preview.</p>
+                        
+                        <!-- Slides -->
+                        <!-- Reference: Anderson, G. 2021. [Samplicity interface images.] Personal images. Sydney -->
+                        <div class="swiper-slide">
+                            <img src="images/perform-interface.png" alt="Samplicity Perform Interface">
+                            <p>Load 16 independent instruments with quick access to instrument selection, volume and preview.</p>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <img src="images/library-interface.png" alt="Samplicity Library Interface">
+                            <p>Browse the included wide-ranging collection of instruments, additional purchased collections, and custom designed instruments with quick access to load for performance or construction.</p>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <img src="images/edit-interface.png" alt="Samplicity Edit Interface">
+                            <p>Edit individual samples within instruments for fine grain control. Choose playback mode, copy and delete sections, perform amplitudinal and temporal changes, apply effects and fades, all while previewing the result in real time.</p>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <img src="images/sample-interface.png" alt="Samplicity Sample Interface">
+                            <p>Record live samples directly from an audio interface or audio routed through your DAW with automatic saving and preparing for construction of an instrument.</p>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <img src="images/build-interface.png" alt="Samplicity Build Interface">
+                            <p>Assemble samples of varying pitches, dynamics, and volumes into complex instruments. Graphically control ranges of samples and edit paramters.</p>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <img src="images/mix-interface.png" alt="Samplicity Mix Interface">
+                            <p>Balance and mix loaded instruments and apply real time effect processing. Use the wide range of included built in effects to personalise and process sounds.</p>
+                        </div>      
                     </div>
-                    
-                    <div class="swiper-slide"><img src="images/library-interface.png">
-                        <p>Browse the included wide-ranging collection of instruments, additional purchased collections, and custom designed instruments with quick access to load for performance or construction.</p>
-                    </div>
-                    
-                    <div class="swiper-slide"><img src="images/edit-interface.png">
-                        <p>Edit individual samples within instruments for fine grain control. Choose playback mode, copy and delete sections, perform amplitudinal and temporal changes, apply effects and fades, all while previewing the result in real time.</p>
-                    </div>
-                    
-                    <div class="swiper-slide"><img src="images/sample-interface.png">
-                        <p>Record live samples directly from an audio interface or audio routed through your DAW with automatic saving and preparing for construction of an instrument.</p>
-                    </div>
-                    
-                    <div class="swiper-slide"><img src="images/build-interface.png">
-                        <p>Assemble samples of varying pitches, dynamics, and volumes into complex instruments. Graphically control ranges of samples and edit paramters.</p>
-                    </div>
-                    
-                    <div class="swiper-slide"><img src="images/mix-interface.png">
-                        <p>Balance and mix loaded instruments and apply real time effect processing. Use the wide range of included built in effects to personalise and process sounds.</p>
-                    </div>
-                                
-                     </div>
             
                     <div class="swiper-pagination"></div>
-              
                 </div>
             
-                  <!-- Buttons sit outside of the swiper container -->
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
-            
+                <!-- Buttons sit outside of the swiper container but in master -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
 
 
-        <sl-dialog label="" class="dialog-overview">
-            <h2>CONGRATULATIONS</h2>
-            
-            <p>Thanks for your interest in purchasing Samplicity!<br>You’ve made the first step.</p>
+            <sl-dialog label="" class="dialog-overview">
+                <h2>CONGRATULATIONS</h2>
+                <p>Thanks for your interest in purchasing Samplicity!<br>
+                    You’ve made the first step.</p>
+                <p>You can purchase the download<br>
+                    version through our partner</p>
+                <p>Plugin Boutique<br>
+                    <a href="http://www.pluginboutique.com" target="_blank">pluginboutique.com</a>
+                </p>
+                <p>Or grab a physical copy<br>
+                    from your local music store.</p>
+            </sl-dialog>
+        </main>
 
-            <p>You can purchase the download<br>version through our partner</p>
-            
-            <p>Plugin Boutique<br><a href="http://www.pluginboutique.com" target="_blank">pluginboutique.com</a></p>
-
-            <p>Or grab a physical copy<br>from your local music store.</p>
-            
-        </sl-dialog>
-    </main>
-
-
-    
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.esm.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./scripts/main.js"></script>
-    <script src="./scripts/interface-script.js"></script>
-</body>
+        <!-- Reference: LaViska, C. n.d. Shoelace. https://shoelace.style-->
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.esm.js"></script>
+        <!-- Reference: Kharlampidi, V. 2021. Swiper. https://swiperjs.com -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./scripts/main.js"></script>
+        <script src="./scripts/interface-script.js"></script>
+    </body>
 </html>

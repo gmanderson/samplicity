@@ -1,105 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="">
-    <meta name="description" content="">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/index-styles.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Gerard Anderson">
+        <meta name="description" content="Defined Sampling's Samplicity software sampler">
+        <!-- Reference: LaViska, C. n.d. Shoelace. https://shoelace.style -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.css">
+        <!-- Reference: Fonticons, Inc. n.d. Font Awesome. https://fontawesome.com -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/index-styles.css">
 
-
-    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
-    
-    <title>Samplicity | Defined Sampling</title>
-</head>
-
-<body>
-
-
-
-    <header>
-
-        <button class="hamburger-button"><i class="fas fa-bars"></i></button>
-        <nav>
-
-            <ul>
-                <li id="menu-logo-list-el">
-                    <a href="index.html"><img src="./images/logo.png" alt="" id="menu-logo"></a>
-                </li>
-                <li>
-                    <a href="interface.html">INTERFACE</a>
-                </li>
-                <li>
-                    <a href="features.html">FEATURES</a>
-                </li>
-                <li>
-                    <a href="tech-specs.html">TECH SPECS</a>
-                </li>
-                <li>
-                    <a href="support.html">SUPPORT</a>
-                </li>
-            </ul>
-    
-            <sl-button size="medium" pill id="buy-btn">BUY</sl-button>
-        </nav>
-    </header>
-
-
-    <main class="index">
+        <!-- Anderson, G. 2021. [Defined Sampling Logo.] Personal image. Sydney -->
+        <link rel="icon" href="./images/favicon.png" type="image/x-icon">
         
-        <div class="main-heading">
-            <h1 class="orange">SAMP</h1>
-            <h1 class="white">LICITY</h1>
-        </div>
+        <title>Defined Sampling | Samplicity</title>
+    </head>
 
-        <div class="sub-heading">
-            <h3 class="orange" id="perform-heading">PERFORM</h3>
-            <h3 class="white separator">|</h3>
-            <h3 class="blue" id="browse-heading">BROWSE</h3>
-            <h3 class="white separator">|</h3>
-            <h3 class="orange" id="edit-heading">EDIT</h3>
-            <h3 class="white separator">|</h3>
-            <h3 class="blue" id="sample-heading">SAMPLE</h3>
-            <h3 class="white separator">|</h3>
-            <h3 class="orange" id="build-heading">BUILD</h3>
-            <h3 class="white separator">|</h3>
-            <h3 class="blue" id="mix-heading">MIX</h3>
-        </div>
-
-        <div id="images">
-            <img src="./images/perform-interface.png" alt="" id="img1">
-            <img src="./images/library-interface.png" alt="" id="img2">
-            <img src="./images/edit-interface.png" alt="" id="img3">
-            <img src="./images/sample-interface.png" alt="" id="img4">
-            <img src="./images/build-interface.png" alt="" id="img5">
-            <img src="./images/mix-interface.png" alt="" id="img6">
-        </div>
-
-        <sl-dialog label="" class="dialog-overview">
-            <h2>CONGRATULATIONS</h2>
+    <body>
+        <header>
+            <button class="hamburger-button"><i class="fas fa-bars"></i></button>
             
-            <p>Thanks for your interest in purchasing Samplicity!<br>You’ve made the first step.</p>
+            <nav>
+                <ul>
+                    <li id="menu-logo-list-el">
+                        <!-- Anderson, G. 2021. [Defined Sampling Logo.] Personal image. Sydney -->
+                        <a href="index.html">
+                            <img src="./images/logo.png" alt="Defined Sampling Logo" id="menu-logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="interface.html">INTERFACE</a>
+                    </li>
+                    <li>
+                        <a href="features.html">FEATURES</a>
+                    </li>
+                    <li>
+                        <a href="tech-specs.html">TECH SPECS</a>
+                    </li>
+                    <li>
+                        <a href="support.html">SUPPORT</a>
+                    </li>
+                </ul>
+        
+                <sl-button size="medium" pill id="buy-btn">BUY</sl-button>
+            </nav>
+        </header>
 
-            <p>You can purchase the download<br>version through our partner</p>
-            
-            <p>Plugin Boutique<br><a href="http://www.pluginboutique.com" target="_blank">pluginboutique.com</a></p>
+        <main class="index">     
+            <div class="main-heading">
+                <h1 class="orange">SAMP</h1>
+                <h1 class="white">LICITY</h1>
+            </div>
 
-            <p>Or grab a physical copy<br>from your local music store.</p>
-            
-        </sl-dialog>
+            <div class="sub-heading">
+                <h3 class="orange" id="perform-heading">PERFORM</h3>
+                <h3 class="white separator">|</h3>
+                <h3 class="blue" id="browse-heading">BROWSE</h3>
+                <h3 class="white separator">|</h3>
+                <h3 class="orange" id="edit-heading">EDIT</h3>
+                <h3 class="white separator">|</h3>
+                <h3 class="blue" id="sample-heading">SAMPLE</h3>
+                <h3 class="white separator">|</h3>
+                <h3 class="orange" id="build-heading">BUILD</h3>
+                <h3 class="white separator">|</h3>
+                <h3 class="blue" id="mix-heading">MIX</h3>
+            </div>
 
-    </main>
+            <div id="images">
+                <!-- Reference: Anderson, G. 2021. [Samplicity interface images.] Personal images. Sydney -->
+                <img src="./images/perform-interface.png" alt="Samplicity Perform Interface" id="img1">
+                <img src="./images/library-interface.png" alt="Samplicity Library Interface" id="img2">
+                <img src="./images/edit-interface.png" alt="Samplicity Edit Interface" id="img3">
+                <img src="./images/sample-interface.png" alt="Samplicity Sample Interface" id="img4">
+                <img src="./images/build-interface.png" alt="Samplicity Build Interface" id="img5">
+                <img src="./images/mix-interface.png" alt="Samplicity Mix Interface" id="img6">
+            </div>
 
-    <!-- <footer>
-        This website has been created as part of an assignment in an approved course of study for Curtin University and contains copyright material not created by the author. All copyright material used remains copyright of the respective owners and has been used here pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia). No part of this work may be reproduced without consent of the original copyright owners. See code comments for references.
-    </footer> -->
+            <sl-dialog label="" class="dialog-overview">
+                <h2>CONGRATULATIONS</h2>
+                <p>Thanks for your interest in purchasing Samplicity!<br>
+                    You’ve made the first step.</p>
+                <p>You can purchase the download<br>
+                    version through our partner</p>
+                <p>Plugin Boutique<br>
+                    <a href="http://www.pluginboutique.com" target="_blank">pluginboutique.com</a>
+                </p>
+                <p>Or grab a physical copy<br>
+                    from your local music store.</p>  
+            </sl-dialog>
+        </main>
 
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.esm.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-    <script src="./scripts/main.js"></script>
-    <script src="./scripts/index-script.js"></script>
-</body>
+        <!-- <footer>
+            This website has been created as part of an assignment in an approved course of study for Curtin University and contains copyright material not created by the author. All copyright material used remains copyright of the respective owners and has been used here pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia). No part of this work may be reproduced without consent of the original copyright owners. See code comments for references.
+        </footer> -->
+
+        <!-- Reference: LaViska, C. n.d. Shoelace. https://shoelace.style -->
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.esm.js"></script>
+        <!-- Reference: GreenSock, Inc. 2020. GSAP. https://greensock.com/gsap/ -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+        <script src="./scripts/main.js"></script>
+        <script src="./scripts/index-script.js"></script>
+    </body>
 </html>

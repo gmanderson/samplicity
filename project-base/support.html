@@ -1,97 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="">
-    <meta name="description" content="">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/support-styles.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Gerard Anderson">
+        <meta name="description" content="Defined Sampling's Samplicity software sampler">
+        <!-- Reference: Fonticons, Inc. n.d. Font Awesome. https://fontawesome.com -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+        <!-- Reference: LaViska, C. n.d. Shoelace. https://shoelace.style -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/support-styles.css">
 
-    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
-    
-    <title>Tech Specs | Samplicity</title>
-</head>
+        <!-- Anderson, G. 2021. [Defined Sampling Logo.] Personal image. Sydney -->
+        <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+        
+        <title>Support | Samplicity</title>
+    </head>
 
-<body>
-
-    <header>
-
-        <button class="hamburger-button"><i class="fas fa-bars"></i></button>
-        <nav>
-
-            <ul>
-                <li id="menu-logo-list-el">
-                    <a href="index.html"><img src="./images/logo.png" alt="" id="menu-logo"></a>
-                </li>
-                <li>
-                    <a href="interface.html">INTERFACE</a>
-                </li>
-                <li>
-                    <a href="features.html">FEATURES</a>
-                </li>
-                <li>
-                    <a href="tech-specs.html">TECH SPECS</a>
-                </li>
-                <li>
-                    <a href="support.html">SUPPORT</a>
-                </li>
-            </ul>
-    
-            <sl-button size="medium" pill id="buy-btn">BUY</sl-button>
-        </nav>
-    </header>
-    
-    <main>
-       
-        <article class="support-layout">
-            <section class="support-request">
-                <h2 class="blue">SUPPORT REQUEST</h2>
-                <form action="">
-                    <label for="">Name</label>
-                    <input type="text"><br>
-                    <label for="">Serial Number</label>
-                    <input type="text"><br>
-                    <label for="">Email</label>
-                    <input type="text"><br>
-                    <label for="">Message</label><br>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <sl-button size="medium" pill id="submit-form-btn">SUBMIT</sl-button>
-                </form>
-
-            </section>
-
-            <section class="company-details">
-                <h2 class="orange">CONTACT</h2>
-                <p>Defined Sampling Pty Ltd</p>
-                <p><a href="https://goo.gl/maps/vD9WzSsNAw29BLT5A" target="_blank"> 1 George St <br>Sydney NSW 2000 <br>Australia</a></p>
-                <p>ABN 91 090 868 323</p>
-                <p><a href="tel:+61 2 8577 1349">+61 2 8577 1349</a><br>
-                <a href="mailto:info@definedsampling.com.au">info@definedsampling.com.au</a></p>
-                <p><a href="http://www.definedsampling.com.au" target="_blank">www.definedsampling.com.au</a></p>
-                <p>(Support queries will only be answered via our request form)</p>
-            </section>
-        </article>
-
-        <sl-dialog label="" class="dialog-overview">
-            <h2>CONGRATULATIONS</h2>
+    <body>
+        <header>
+            <button class="hamburger-button"><i class="fas fa-bars"></i></button>
             
-            <p>Thanks for your interest in purchasing Samplicity!<br>You’ve made the first step.</p>
+            <nav>
+                <ul>
+                    <li id="menu-logo-list-el">
+                        <!-- Anderson, G. 2021. [Defined Sampling Logo.] Personal image. Sydney -->
+                        <a href="index.html">
+                            <img src="./images/logo.png" alt="Defined Sampling Logo" id="menu-logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="interface.html">INTERFACE</a>
+                    </li>
+                    <li>
+                        <a href="features.html">FEATURES</a>
+                    </li>
+                    <li>
+                        <a href="tech-specs.html">TECH SPECS</a>
+                    </li>
+                    <li>
+                        <a href="support.html">SUPPORT</a>
+                    </li>
+                </ul>
+        
+                <sl-button size="medium" pill id="buy-btn">BUY</sl-button>
+            </nav>
+        </header>
+        
+        <main>
+            <article class="support-layout">
+                <section class="support-request">
+                    <h2 class="blue">SUPPORT REQUEST</h2>
+                    
+                    <form action="">
+                        <label for="">Name</label>
+                        <input type="text"><br>
+                        <label for="">Serial Number</label>
+                        <input type="text"><br>
+                        <label for="">Email</label>
+                        <input type="text"><br>
+                        <label for="">Message</label><br>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <sl-button size="medium" pill id="submit-form-btn">SUBMIT</sl-button>
+                    </form>
+                </section>
 
-            <p>You can purchase the download<br>version through our partner</p>
-            
-            <p>Plugin Boutique<br><a href="http://www.pluginboutique.com" target="_blank">pluginboutique.com</a></p>
+                <section class="company-details">
+                    <h2 class="orange">CONTACT</h2>
+                    <p>Defined Sampling Pty Ltd</p>
+                    <p><a href="https://goo.gl/maps/vD9WzSsNAw29BLT5A" target="_blank"> 1 George St <br>Sydney NSW 2000 <br>Australia</a></p>
+                    <p>ABN 91 090 868 323</p>
+                    <p><a href="tel:+61 2 8577 1349">+61 2 8577 1349</a><br>
+                    <a href="mailto:info@definedsampling.com.au">info@definedsampling.com.au</a></p>
+                    <p><a href="http://www.definedsampling.com.au" target="_blank">www.definedsampling.com.au</a></p>
+                    <p>(Support queries will only be answered via our request form)</p>
+                </section>
+            </article>
 
-            <p>Or grab a physical copy<br>from your local music store.</p>
-            
-        </sl-dialog>
+            <sl-dialog label="" class="dialog-overview">
+                <h2>CONGRATULATIONS</h2>    
+                <p>Thanks for your interest in purchasing Samplicity!<br>
+                    You’ve made the first step.</p>
+                <p>You can purchase the download<br>
+                    version through our partner</p>
+                <p>Plugin Boutique<br>
+                    <a href="http://www.pluginboutique.com" target="_blank">pluginboutique.com</a>
+                </p>
+                <p>Or grab a physical copy<br>
+                    from your local music store.</p>
+            </sl-dialog>
+        </main>
 
-    </main>
-
-
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.esm.js"></script>
-    <script src="./scripts/main.js"></script>
-</body>
+        <!-- Reference: LaViska, C. n.d. Shoelace. https://shoelace.style -->
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.27/dist/shoelace/shoelace.esm.js"></script>
+        <script src="./scripts/main.js"></script>
+    </body>
 </html>
