@@ -67,7 +67,7 @@ playBtns.forEach(playBtn =>{
         // Play/stop audio for button clicked
         playAudio("#"+playBtn.querySelector('.audio-file').id)
 
-        // Trigger svg animation
+        // Trigger svg animation and change icon
         if(playBtn.classList.contains('playing')){
             playBtn.classList.toggle('playing')
             playBtn.querySelector('.fas').classList.toggle('fa-stop')
