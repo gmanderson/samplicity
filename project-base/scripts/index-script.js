@@ -1,3 +1,5 @@
+  //THIS FILE CONTAINS ONLY SCRIPTS SPECIFIC TO INDEX PAGE
+  
   //GSAP INDEX MAIN ANIMATION
   let tlMain = gsap.timeline({delay: 1})
 
