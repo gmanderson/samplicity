@@ -36,8 +36,6 @@ for(i=0; i<lines.length; i++){
     }
 
     let lineClass = '.line0' + (i+1)
-    console.log(lineClass)
-    console.log(lines[i])
     linesAnimated.add({
         targets: lineClass,
         d:[
@@ -84,8 +82,8 @@ playBtns.forEach(playBtn =>{
 
 
 // SCROLL TRIGGER
-const numSections = 11;
-let featureTimelines = [];
+const numSections = 11
+let featureTimelines = []
 
 featureTimelines[0] = gsap.timeline({
 })
@@ -109,7 +107,7 @@ for(i = 2; i<numSections; i++){
 let xCoordinate;
 
 for(i = 0; i< numSections; i++){
-    if((i%2) == 0){
+    if((i%2) === 0){
         xCoordinate = -1500
     }else{
         xCoordinate = 2000
