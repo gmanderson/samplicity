@@ -37,7 +37,6 @@
   // Animate main heading and seperators
   tlMain.from('.main-heading',{
     duration: 1.2,
-    // opacity:0,
     scale: 0,
     ease: "elastic.out(1, 0.6)"
   })
