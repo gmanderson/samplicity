@@ -1,7 +1,6 @@
-/* Add font import for roboto */
+/* Reference: Robertson, C. n.d. “Roboto Condensed”. Google Fonts. https://fonts.google.com/specimen/Roboto+Condensed?query=roboto&preview.text_type=custom#standard-styles */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 
-/* NOT TO SELF work in ems (multiples of 12px fixed and % dynamic */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -11,7 +10,6 @@
 body{
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #242424;
-    /* height: 768px; THIS IS THE HEIGHT FOR INDEX*/
 }
 
 #menu-logo{
@@ -36,10 +34,10 @@ header{
     top: 0;
     z-index: 10;
 }
+
 nav{
     position: sticky;
     top: 0px;
-    /* padding-left: 114px; */
     background-color: #242424;
 }
 
@@ -54,7 +52,6 @@ nav li{
 }
 
 nav a{
-
     padding: 10px 40px;
     color: #FF9D00;
     text-decoration: none;
@@ -106,7 +103,6 @@ sl-button::part(base){
     color: #FFFFFF;
 }
 
-
 footer{
     color: #ffffff;
     margin: 30px;
@@ -114,20 +110,11 @@ footer{
 
 sl-dialog{
     --width: 500px;
-    /* background-color: #242424; */
 }
 
 sl-dialog::part(base){
     border: #ffffff solid 1px;
 }
-
-
-/* CAN'T SEEM TO CHANGE BUTTON SIZE/COLOUR
-
-sl-dialog::part(base::button){
-    font-size: 5em !important;
-    color: #ffffff !important;
-} */
 
 sl-dialog::part(panel){
     background-color: #242424;
@@ -162,10 +149,7 @@ sl-dialog a{
     color: #ffffff;
 }
 
-
-
 @media only screen and (max-width: 1024px){
-
     .hamburger-button{
         display: block;
         position: absolute;
@@ -189,7 +173,6 @@ sl-dialog a{
     }
 
     nav{
-        /* display: none; */
         position: fixed;
         top: 0;
         left: 0;
@@ -231,8 +214,6 @@ sl-dialog a{
     }
 
     sl-dialog h2{
-
         font-size: 2em;
-
     }
 }

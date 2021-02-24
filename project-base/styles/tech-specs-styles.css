@@ -1,8 +1,4 @@
-
-/* TECH SPECS SPEICIFIC */
 .specs{
-    /* margin-left: auto;
-    margin-right: auto; */
     margin: auto;
     width: 750px;
     padding-top: 4em;
@@ -54,7 +50,6 @@
     }
 }
 
-/* UL ITEMS HIDDEN BY DEFAULT */
 .specs ul{
     display: none;
 }
@@ -83,14 +78,11 @@ section div{
     padding-top: 8px;
 }
 
-
 @media only screen and (max-width: 1024px){
 
     .specs{
-
         width: 100%;
         padding: 0 4% 8% 4%;
-
     }
 
     .specs h2{
@@ -104,7 +96,6 @@ section div{
         font-size: 1.3em;
         padding-top: 8px;
     }
-
 }
 
 

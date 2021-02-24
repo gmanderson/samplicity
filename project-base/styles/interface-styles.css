@@ -1,5 +1,3 @@
-/* INTERFACE PAGE*/
-
 .master-container{
     position: relative;
     width: 1000px;
@@ -17,7 +15,6 @@
     height: 300px;
     width: 218px;
     color: #ffffff;
-
 }
 
 .swiper-slide p{
@@ -31,6 +28,7 @@
 
 .swiper-button-next, .swiper-button-prev{
     color: orange;
+    /* Reference: Anderson, G. 2021. [Slide arrow.] Personal image. Sydney */
     background: url('../images/slide-arrow.png');
     height: 160px;
     background-repeat: no-repeat;
@@ -50,7 +48,6 @@
     left: auto;
     right: 80px;
 }
-
 
 .swiper-button-next::after, .swiper-button-prev::after{
     display: none;
@@ -73,30 +70,20 @@
     background: white;
 }
 
-
 @media only screen and (max-width: 1024px){
-
     .master-container{
-
         width: 95%;
         max-width: 570px;
-
     } 
 
     .swiper-container {
-
         width: 95%;
-        /* height: 500%; */
         margin-top: 0;
         padding: 0;
-
       } 
 
-      .swiper-slide{
-
+    .swiper-slide{
         width: 95%;
-
-    
     }
 
     .swiper-slide img{
@@ -107,5 +94,4 @@
     .swiper-button-next, .swiper-button-prev{
         display: none;
     }
-
 }

@@ -1,12 +1,8 @@
-/* FEATURES RELATED */
 .features-layout{
-    /* display: grid;
-    grid-template-rows: 1fr 1fr; */
     width: 970px;
     margin-left: auto;
     margin-right: auto;
     color: #ffffff;
-
 }
 
 .features-layout section{
@@ -42,10 +38,6 @@ sl-progress-bar{
     top: 114px;
 }
 
-/* #audio-lines{
-    width: 80%;
-} */
-
 .feature-img{
     text-align: center;
     margin: 1em;
@@ -67,7 +59,7 @@ sl-progress-bar{
     margin-top: 2em;
 }
 
-.play-btn, .play-select-btn{
+.play-select-btn{
     position: relative;
     height: 60px;
 }
@@ -82,18 +74,6 @@ div{
     position: relative;
 }
 
-.play-btn{
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 55px;
-}
-
-.play-btn sl-button i{
-    position: inherit;
-    font-size: 1em;
-}
-
 .play-select-btn p{
     margin-left: 150px;
     padding-top: 8px;
@@ -106,27 +86,14 @@ div{
 
 svg{
     height: 20%;
-    /* width: 70%; */
 }
 
 .fa-play{
     color: #0086FF;
 }
-/* 
-.play-btn .fa-play{
-    color: #000000;
-    padding-left: 5px;
-}
-
-.play-btn sl-button::part(base){
-    background: #0086FF;
-} */
 
 @media only screen and (max-width: 1024px){
-
     .features-layout{
-        /* display: grid;
-        grid-template-rows: 1fr 1fr; */
         width: 100%;
     }
 
@@ -184,5 +151,4 @@ svg{
         margin-left: auto;
         margin-right: auto;
     }
-
 }
