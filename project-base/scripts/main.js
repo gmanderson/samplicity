@@ -12,6 +12,7 @@ const hamburgerBtn = document.querySelector('.hamburger-button')
 const nav = document.querySelector('nav')
 const openCloseIcon = hamburgerBtn.querySelector('.fa-bars')
 
+// Clicking hamburger button opens menu and toggles between bars and times icons
 hamburgerBtn.addEventListener('click', function(){
     nav.classList.toggle('open')
     openCloseIcon.classList.toggle('fa-bars')

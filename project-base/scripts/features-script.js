@@ -3,6 +3,7 @@
 //PROGRESS BAR
 const progressBar = document.querySelector('#bar');
 
+// Calculates percentage to fill the bar as user scrolls
 window.addEventListener('scroll', () => {
     progressBar.percentage = window.pageYOffset/(document.body.clientHeight-innerHeight)*100;
 });
@@ -28,8 +29,8 @@ const linesAnimated = anime.timeline({
         loop: true
 })
 
+// Adds animation to timeline
 let linesSynch;
-
 for(i=0; i<lines.length; i++){
     if(i>0){
         linesSynch = '-=800'
@@ -85,6 +86,7 @@ playBtns.forEach(playBtn =>{
 const numSections = 11
 let featureTimelines = []
 
+// Create inital two unique timelines for sections 1 and 2
 featureTimelines[0] = gsap.timeline({
 })
 featureTimelines[1] = gsap.timeline({
@@ -94,6 +96,7 @@ featureTimelines[1] = gsap.timeline({
     }
 })
 
+// Create timelines for remaining sections with loop due to same parameters
 for(i = 2; i<numSections; i++){
     let section = `#section-${(i-1)}`
     featureTimelines[i] = gsap.timeline({
@@ -104,8 +107,8 @@ for(i = 2; i<numSections; i++){
     })
 }
 
+// Add animations to each timeline
 let xCoordinate;
-
 for(i = 0; i< numSections; i++){
     if((i%2) === 0){
         xCoordinate = -1500

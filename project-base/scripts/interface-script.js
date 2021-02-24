@@ -2,6 +2,7 @@
 
 const swiperContainer = document.querySelector('.swiper-container')
 
+// Constructs carousel with arrows and pagination dots for control
 const swiper = new Swiper(swiperContainer, {
   slidesPerView: 1,
   direction: 'horizontal',

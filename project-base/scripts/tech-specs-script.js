@@ -2,7 +2,7 @@
 
 const specHeadings = document.querySelectorAll('section')
 
-// JS WHERE ADDS STYLE PARAMETER --- IN PROPOSAL PLUS SPINS BEFORE BECOMING MINUS
+// Clicking respective heading opens the content and performs the icon animation
 specHeadings.forEach(heading => {
     heading.addEventListener('click', ()=>{
         heading.querySelector('ul').classList.toggle('open')
