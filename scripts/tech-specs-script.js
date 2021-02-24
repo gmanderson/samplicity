@@ -1,5 +1,6 @@
-//THIS FILE CONTAINS ONLY SCRIPTS SPECIFIC TO INTERFACE PAGE
+//THIS FILE CONTAINS ONLY SCRIPTS SPECIFIC TO TECH SPECS PAGE
 
+// HEADING DRAWERS
 const specHeadings = document.querySelectorAll('section')
 
 // Clicking respective heading opens the content and performs the icon animation

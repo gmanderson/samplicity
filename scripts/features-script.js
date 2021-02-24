@@ -45,6 +45,7 @@ for(i=0; i<lines.length; i++){
     }, linesSynch)
 }
 
+//AUDIO PLAYBACK
 // Toggles play and stop for each respective audio file passed in
 function playAudio(audioN){
     if(document.querySelector(audioN).classList.contains('pause')){
@@ -56,6 +57,7 @@ function playAudio(audioN){
     }
 }
 
+// AUDIO PLAYBACK AND SVG ANIMATION TRIGGERS
 // Select all play buttons
 let playBtns = document.querySelectorAll('.play-select-btn')
 
