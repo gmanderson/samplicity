@@ -1,6 +1,6 @@
 //THIS FILE CONTAINS ONLY SCRIPTS SPECIFIC TO INTERFACE PAGE
 
-const swiperContainer = document.querySelector('.swiper-container')
+const swiperContainer = document.querySelector('.swiper')
 
 // Constructs carousel with arrows and pagination dots for control
 const swiper = new Swiper(swiperContainer, {
