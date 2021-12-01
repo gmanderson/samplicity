@@ -49,8 +49,13 @@ for(i=0; i<lines.length; i++){
 // Toggles play and stop for each respective audio file passed in
 function playAudio(audioN){
     if(document.querySelector(audioN).classList.contains('pause')){
+        // Reset all files to pause
+        document.querySelectorAll(".audio-file").forEach(file => {
+            file.classList.add('pause')
+        })
+        // Set current file to play (not pause)
         document.querySelector(audioN).classList.toggle('pause')
-        document.querySelector(audioN).play()
+        document.querySelector(audioN).play()        
     }else{
         document.querySelector(audioN).classList.toggle('pause')
         document.querySelector(audioN).load()
@@ -63,23 +68,43 @@ let playBtns = document.querySelectorAll('.play-select-btn')
 
 // Loop through play buttons
 playBtns.forEach(playBtn =>{
+
     playBtn.addEventListener('click', function(){
+        // // Reset all play button icons
+        playBtns.forEach(btn => {
+                btn.querySelector('.fas').classList.remove('fa-stop')
+                btn.querySelector('.fas').classList.add('fa-play')
+        })
+
+        // Reset audio playback
+        document.querySelectorAll(".audio-file").forEach(file => {
+            file.load()
+        })
+
         // Play/stop audio for button clicked
         playAudio("#"+playBtn.querySelector('.audio-file').id)
 
-        // Trigger svg animation and change icon
+        // Change icon for currently played button
+        playBtn.querySelector('.fas').classList.add('fa-stop')
+        playBtn.querySelector('.fas').classList.remove('fa-play')
+
+        // Reset svg animation and change icon
         if(playBtn.classList.contains('playing')){
             playBtn.classList.toggle('playing')
-            playBtn.querySelector('.fas').classList.toggle('fa-stop')
-            playBtn.querySelector('.fas').classList.toggle('fa-play')
+            playBtn.querySelector('.fas').classList.remove('fa-stop')
+            playBtn.querySelector('.fas').classList.add('fa-play')
             linesAnimated.pause()
             linesAnimated.seek(0)
         }else{
+            // Set all buttons to not playing
+            playBtns.forEach(svgBtn => {
+                svgBtn.classList.remove('playing')
+            })
+            // Play svg animation, reset current button to playing
             playBtn.classList.toggle('playing')
-            playBtn.querySelector('.fas').classList.toggle('fa-stop')
-            playBtn.querySelector('.fas').classList.toggle('fa-play')
             linesAnimated.play()
         }
+
     })
 })
 
